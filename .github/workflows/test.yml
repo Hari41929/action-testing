@@ -1,0 +1,14 @@
+name: CI
+
+# Trigger
+on: push
+
+# Job
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    # Steps
+    steps:
+      - uses: actions/checkout@v3
+      - run: echo "Hello, Hariharan!"
